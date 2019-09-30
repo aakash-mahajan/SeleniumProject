@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="methods">
+  <test name="Smoke">
+    <classes>
+      <class name="testngFeatures.MercuryApplication">
+      	<methods>
+      		<include name="Login"></include>
+      	</methods>
+      	<methods>
+      		<include name="searchFlight"></include>
+      	</methods>
+      	<methods>
+      		<exclude name="Logout"></exclude>
+      	</methods>
+      	<methods>
+      		<exclude name="bookFlight"></exclude>
+      	</methods>
+      </class>
+    </classes>
+  </test> <!-- Test -->  
+</suite> <!-- Suite -->
